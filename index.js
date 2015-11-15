@@ -12,7 +12,7 @@ function unlinkOrRmrfSync(path) {
   if (canSymlink) {
     fs.unlinkSync(path);
   } else {
-    rimraf(path);
+    rimraf.sync(path);
   }
 }
 
